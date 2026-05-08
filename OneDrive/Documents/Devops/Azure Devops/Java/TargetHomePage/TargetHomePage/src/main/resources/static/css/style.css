@@ -1,0 +1,192 @@
+:root {
+    --brand-red: #d5102b;
+    --brand-dark: #1d1d1f;
+    --brand-light: #fafafa;
+    --card-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f6f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+.bg-red {
+    background-color: var(--brand-red) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.brand-icon {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    background: #fff;
+    color: var(--brand-red);
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+.site-title {
+    font-size: 1.1rem;
+}
+
+.brand-tagline {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.top-search-bar {
+    background: #fff;
+}
+
+.search-form {
+    transition: all 0.3s ease;
+}
+
+.search-form:hover {
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    background: linear-gradient(120deg, rgba(213,16,43,.08), rgba(255,255,255,1));
+}
+
+.eyebrow-label {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+    color: var(--brand-red);
+    background: rgba(213,16,43,0.08);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.category-card,
+.sidebar-card,
+.deal-card,
+.product-card,
+.contact-card,
+.feature-box,
+.mini-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover,
+.sidebar-card:hover,
+.deal-card:hover,
+.product-card:hover,
+.contact-card:hover,
+.feature-box:hover,
+.mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow);
+}
+
+.category-card {
+    background: #fff;
+    border: 1px solid rgba(255,255,255,0.8);
+}
+
+.category-icon {
+    color: var(--brand-red);
+}
+
+.deal-card img,
+.product-card img {
+    object-fit: cover;
+    height: 260px;
+}
+
+.deal-card .deal-badge {
+    font-weight: 600;
+}
+
+.product-card {
+    background: #fff;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    transition: transform 0.35s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.03);
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+}
+
+.product-description {
+    min-height: 3rem;
+}
+
+.sidebar-card {
+    background: #fff;
+}
+
+.sidebar-card h5,
+.footer h5,
+.footer h6 {
+    font-weight: 700;
+}
+
+.footer {
+    background: var(--brand-dark);
+    color: #f8f6f5;
+}
+
+.footer a {
+    color: #f8f6f5;
+}
+
+.footer a:hover {
+    color: var(--brand-red);
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.cart-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.contact-card,
+.mini-card,
+.sidebar-card,
+.feature-box {
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.hero-actions .btn {
+    min-width: 170px;
+}
+
+@media (max-width: 992px) {
+    .site-title {
+        font-size: 1rem;
+    }
+}
